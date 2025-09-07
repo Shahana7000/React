@@ -2,9 +2,10 @@ function Hoverhandle(){
     console.log("button was hover")
 }
 
-function handleClick(){
+function handleClick(event){
 
-    console.log("button was clicked")
+    console.log("button was clicked");
+    console.log(event)
 }
 
 function doubleClick(){
