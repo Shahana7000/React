@@ -6,12 +6,14 @@ let toggleLike = () =>{
   setIsLike(!isLike)
 }
 
+let likeStyles = {color : "red"}
+
     return(
         <div>
             <p onClick={toggleLike}>
             
                {isLike ? (
-                <i className="fa-solid fa-heart"></i>
+                <i className="fa-solid fa-heart" style={likeStyles}></i>
                ) : (
                 <i className="fa-regular fa-heart"></i>
                )}
