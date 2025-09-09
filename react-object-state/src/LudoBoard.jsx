@@ -4,6 +4,7 @@ export default function LudoBoard(){
     let [moves, setMoves] = useState({blue:0, yellow:0,
         green:0, red: 0
     })
+    let [arr, SetArr] =useState([" no moves"])
 
 
     let updateBlue = () =>{
@@ -12,6 +13,8 @@ export default function LudoBoard(){
         setMoves((preMoves) =>{
          return {...preMoves, blue: preMoves.blue+1}
     })
+    SetArr((preArr) => {return[...preArr, "blue moves)"]})
+    console.log(arr)
     }
       let updateyellow = () =>{
         moves.yellow += 1;
